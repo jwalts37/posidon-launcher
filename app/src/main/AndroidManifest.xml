@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="posidon.launcher">
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/hometheme">
+
+        <provider
+            android:authorities="posidon.launcher.fivesecdelaycp"
+            android:grantUriPermissions="true"
+            android:exported="true"
+            android:enabled="true"
+            android:name=".external.kustom.Kustom5SecsProvider"/>
+
+        <receiver
+            android:name=".external.widgets.ClockWidget"
+            android:label="Minimal date"
+            android:exported="true">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/clock_widget_info" />
+        </receiver>
+
+        <receiver
+            android:name=".external.widgets.BigWidget"
+            android:label="Big widget"
+            android:exported="true">
+            <intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE" /></intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/big_widget_info" />
+        </receiver>
+
+        <service
+            android:name=".feed.notifications.NotificationService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Home"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="mcc|mnc|uiMode|keyboard|keyboardHidden|screenSize|orientation|navigation|screenLayout|smallestScreenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:allowEmbedded="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+        </activity>
+
+        <activity
+            android:name=".desktop.DesktopMode"
+            android:label="posidon desktop"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="mcc|mnc|uiMode|keyboardHidden|screenSize|orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustResize"
+            android:allowEmbedded="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SECONDARY_HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".desktop.AppList"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".feed.order.FeedOrderActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/hometheme" />
+
+        <activity
+            android:name=".customizations.settingScreens.Customizations"
+            android:icon="@drawable/customizations"
+            android:label="@string/settings_title"
+            android:taskAffinity="posidon.launcher.Customizations"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomDrawer"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.DRAWER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomHome"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.FEED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomNews"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.NEWS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomNotifications"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.NOTIFICATIONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomDock"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.DOCK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".feed.news.chooser.FeedChooser"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.RemovedArticles"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.settingScreens.CustomFolders"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.FOLDERS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomSearch"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.SEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomTheme"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.THEME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.settingScreens.CustomGestures"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="posidon.launcher.settings.GESTURES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".customizations.IconPackPicker"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.settingScreens.CustomHiddenApps"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.settingScreens.CustomHiddenAppNotifications"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.settingScreens.CustomOther"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.settingScreens.CustomDev"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+        <activity
+            android:name=".customizations.settingScreens.About"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+
+
+        <activity
+            android:name=".tools.StackTraceActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings" />
+
+
+        <activity
+            android:name=".wall.Gallery"
+            android:icon="@drawable/walls"
+            android:label="@string/walls"
+            android:taskAffinity="posidon.launcher.wall.Gallery"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/wallgallery"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wall.WallActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/wallprev" />
+        <activity
+            android:name=".external.ApplyIcons"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="posidon.launcher.action.APPLY_ICONPACK" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".search.SearchActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/settings_title_search"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ASSIST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.systemui.action_assist_icon"
+                android:resource="@mipmap/ic" />
+        </activity>
+        <activity
+            android:name=".search.ConsoleActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".tutorial.Tutorial"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/tutorial" />
+        <activity android:name=".tutorial.WelcomeActivity" android:theme="@style/welcome" />
+        <activity android:name=".search.HiddenAppsActivity" android:theme="@style/hiddenApps" />
+        <activity
+            android:name=".customizations.FakeLauncherActivity"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".external.AddShortcutActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:theme="@style/floatingScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.content.pm.action.CONFIRM_PIN_SHORTCUT" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".feed.news.readers.WebViewActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:theme="@style/settings"/>
+
+        <activity android:name=".items.users.customAppIcon.CustomAppIcon" android:configChanges="keyboardHidden|screenSize|orientation" />
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>

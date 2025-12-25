@@ -1,0 +1,293 @@
+<resources>
+    <string name="app_name">posidon-startscherm</string>
+    <string name="aboutbtn">Over</string>
+    <string name="walls">Achtergronden</string>
+
+    <string name="appLabels">App-labels</string>
+    <string name="icon_pack">Pictogramthema</string>
+    <string name="iconSize">Pictogramgrootte</string>
+    <string name="columns">Kolommen</string>
+
+    <string name="settings_title">Aanpassingen</string>
+    <string name="settings_title_drawer">App-lijst</string>
+    <string name="settings_title_clock_format">Klok</string>
+    <string name="settings_title_search">Zoeken</string>
+    <string name="settings_title_dev">Ontwikkelaar</string>
+    <string name="settings_title_dock">Dock</string>
+    <string name="settings_title_feed">Feed</string>
+    <string name="settings_title_theme">Thema</string>
+    <string name="settings_title_other">Overig</string>
+    <string name="settings_title_icons">Pictogrammen</string>
+    <string name="settings_title_icon_packs">Pictogramthema\'s</string>
+    <string name="settings_title_folders">Mappen</string>
+    <string name="settings_title_news">Nieuws</string>
+    <string name="settings_title_quickstep">QuickStep</string>
+    <string name="settings_title_gestures">Gestures</string>
+
+    <string name="defaultdateformat">d MMM | cccc</string>
+    <string name="settingsdateformat">Datum</string>
+    <string name="searchbarhint">Zoeken…</string>
+    <string name="feed_sources">Bronnen</string>
+    <string name="example_feed_url">androidpolice.com/feed</string>
+    <string name="slogan">Minimaal, boordevol functies, anders.</string>
+    <string name="settingshidestatus">Statusbalk verbergen</string>
+    <string name="spacing">Uitlijning</string>
+    <string name="permission_storage_description">Verleen toegang tot je opslag om de achtergrond te kunnen wijzigen en de vervaging in de app-lijst aan te passen</string>
+    <string name="storage_access">Toegang tot opslag</string>
+    <string name="notification_access">Toegang tot meldingen</string>
+    <string name="permission_notifications_description">Verleen toegang tot je meldingen om je meldingen te tonen op het startscherm</string>
+    <string name="surprise_me">Verras me…</string>
+    <string name="preset_chooser_title">Choose where to start</string>
+    <string name="done">Klaar</string>
+    <string name="explanation">Houd je startscherm lang ingedrukt om aanpassingen te doen en de achtergrond te wijzigen</string>
+    <string name="twitter">Twitter</string>
+    <string name="website">Website</string>
+    <string name="leoxshn_description">Maker van dit startscherm</string>
+    <string name="sajid_shaik_description">Ontwerper van het startschermpictogram</string>
+    <string name="app_name_hint">naam</string>
+    <string name="version">Versie</string>
+    <string name="uninstall">Verwijderen</string>
+    <string name="component">Onderdeel</string>
+    <string name="propenties">Eigenschappen</string>
+    <string name="edit">Bewerken</string>
+    <string name="remove_icon">Pictogram verwijderen</string>
+    <string name="colorpicker_hint">Hexcode (ff000000 voor zwart)</string>
+    <string name="apply">toepassen</string>
+    <string name="setting_show_component">Onderdeel tonen in app-eigenschappen</string>
+    <string name="color">Kleur</string>
+    <string name="radius">Straal</string>
+    <string name="bottom_padding">Opvulling aan onderkant</string>
+    <string name="blur">Vervaging</string>
+    <string name="setting_title_hide_apps">Apps verbergen</string>
+    <string name="setting_hide_until_user_scrolls">Verbergen tot je begint met scrollen</string>
+    <string name="corner_radius">Hoekstraal</string>
+    <string name="background">Achtergrond</string>
+    <string name="text_color">Tekstkleur</string>
+    <string name="images">Afbeeldingen</string>
+    <string name="title_color">Titelkleur</string>
+    <string name="sans_serif">Schreefloos</string>
+    <string name="posidon_sans">Posidon Sans</string>
+    <string name="monospace">Monospace</string>
+    <string name="math_operation">Wiskunde-opdracht</string>
+    <string name="ip_address_external">IP-adres (extern)</string>
+    <string name="failed_to_connect">Kan niet verbinden</string>
+    <string name="next">Volgende</string>
+    <string name="hint_color">Tipkleur</string>
+    <string name="hint_text">Tiptekst</string>
+    <string name="font">Lettertype</string>
+    <string name="default_icon_theme">Systeem</string>
+    <string name="force_stop_launcher">Geforceerd stoppen/herstarten</string>
+    <string name="icon_shape">Pictogramvorm</string>
+    <string name="squircle">Rondhoekig vierkant</string>
+    <string name="square">Vierkant</string>
+    <string name="rounded_square">Afgerond vierkant</string>
+    <string name="circle">Cirkel</string>
+    <string name="accent_color">Accentkleur</string>
+    <string name="animated">Animatie</string>
+    <string name="generate_adaptive_icons">Aanpasbare pictogrammen genereren</string>
+    <string name="in_dock">Op dock</string>
+    <string name="in_drawer">In app-lijst</string>
+    <string name="duration">Duur</string>
+    <string name="haptic_feedback">Haptische feedback</string>
+    <string name="minimal_statusbar">Minimale statusbalk</string>
+    <string name="statusbar">Statusbalk</string>
+    <string name="notifications">Meldinges</string>
+    <string name="text_shadow">Tekstschaduw</string>
+    <string name="ubuntu">Ubuntu</string>
+    <string name="lexend_deca">Lexend Deca</string>
+    <string name="wall_apply_home_screen">Startscherm</string>
+    <string name="wall_apply_lock_screen">Vergrendelscherm</string>
+    <string name="wall_apply_both">Beide</string>
+    <string name="settings_rows">Rijen</string>
+    <string name="telegram">Telegram</string>
+    <string name="action_buttons">Actieknoppen</string>
+    <string name="sorting">Sortering</string>
+    <string name="blur_layers">Overgangslagen</string>
+    <string name="start">Starten</string>
+    <string name="remove">Verwijderen</string>
+    <string name="labelColor">Labelkleur</string>
+    <string name="collapse_notifications">Meldingen inklappen</string>
+    <string name="open_dyslexic">OpenDyslexic3</string>
+    <string name="app_open_animation">Animatie bij openen van app</string>
+    <string name="no">Nee</string>
+    <string name="yes">Ja</string>
+    <string name="would_you_like_to_rate_this_launcher">Wil je deze app beoordelen in de Play Store?</string>
+    <string name="hidden_apps">Verborgen apps</string>
+    <string name="choose_a_launcher">Kies een startscherm</string>
+    <string name="horizontal_margin">Horizontale marge</string>
+    <string name="vertical_margin">Vertical margin</string>
+    <string name="value_of_pi">Waarde van 蟺</string>
+    <string name="show_behind_dock">Tonen achter dock</string>
+    <string name="some_quick_adjustments">Enkele snelle aanpassingen</string>
+    <string name="mk_backup">Back-up maken</string>
+    <string name="use_backup">Back-up herstellen</string>
+    <string name="permissions">Machtigingen</string>
+    <string name="grant">Verlenen</string>
+    <string name="background_type">Soort achtergrond</string>
+    <string name="max_image_width">Max. afbeeldingsbreedte</string>
+    <string name="scrollbar">Scrollbalk</string>
+    <string name="grouping">Groepering</string>
+    <string name="recolor_white_bgs">Tint toepassen op witte achtergronden</string>
+    <string name="oops">Oeps!</string>
+    <string name="posidon_launcher_crashed">posidon is gecrasht</string>
+    <string name="send_bug_report">Bugmelding versturen</string>
+    <string name="show_name">Naam tonen</string>
+    <string name="name_color">Naam van kleur</string>
+    <string name="sections">Secties</string>
+    <string name="name_position">Naam van positie</string>
+    <string name="swipe_to_remove">Veeg om te verwijderen</string>
+    <string name="removed">Verwijderd</string>
+    <string name="restore">Herstellen</string>
+    <string name="reply">Antwoord</string>
+    <string name="show_below_apps">Tonen onder apps</string>
+    <string name="cards">Cards</string>
+    <string name="notification_badges">Notification badges</string>
+    <string name="read_method">Reading method</string>
+    <string name="console">Console</string>
+    <string name="inter">Inter</string>
+    <string name="search_as_home">Search as home</string>
+    <string name="gesture_top_overscroll">Top overscroll</string>
+    <string name="gesture_bottom_overscroll">Bottom overscroll</string>
+    <string name="pinch">Pinch</string>
+    <string name="long_press">Long-press</string>
+    <string name="back_button">Back button</string>
+    <string name="github">Github</string>
+    <string name="duckduckgo_results">DuckDuckGo results</string>
+    <string name="media_player">Media player</string>
+    <string name="show_feed_spinner">Show feed spinner</string>
+    <string name="stack_results_from_bottom">Stack results from bottom</string>
+    <string name="airplane_mode">Airplane mode</string>
+    <string name="power_usage">Power usage</string>
+    <string name="wireless_title"><![CDATA[Wi-Fi & internet]]></string>
+    <string name="device_info">Device info</string>
+    <string name="contacts_access">Contacts access</string>
+    <string name="permission_contacts_description">Grant contact access so your contacts can show-up in search results</string>
+    <string name="github_contributors">Github contributors</string>
+    <string name="lock_home">Lock homescreen</string>
+    <string name="starred_contacts">Starred contacts</string>
+    <string name="kustom_variables">Kustom variables</string>
+    <string name="swipe_bg_color">Swipe background</string>
+    <string name="hide_crash_logs">Hide crash logs</string>
+    <string name="ignore_navbar_height">Ignore navbar height</string>
+    <string name="show_number">Show number</string>
+    <string name="slide_up">Slide up</string>
+    <string name="package_search">Package search</string>
+    <string name="shortcuts">Shortcuts</string>
+    <string name="contacts">Contacts</string>
+    <string name="keep_position">Keep position</string>
+    <string name="undo_popup">Undo popup</string>
+    <string name="undo">Undo</string>
+    <string name="fading_edge">Fading edge</string>
+    <string name="export">Export</string>
+    <string name="_import">Import</string>
+    <string name="max_cards">Max cards</string>
+    <string name="widget">Widget</string>
+    <string name="staggered">Staggered</string>
+    <string name="adjust_height_to_content">Wrap content</string>
+    <string name="separate_text">Separate text</string>
+    <string name="height">Height</string>
+    <string name="load_on_resume">Load on resume</string>
+    <string name="include_hidden_apps">Include hidden apps</string>
+    <string name="show_source">Show source</string>
+    <string name="max_days_age">Max age (days)</string>
+    <string name="tint_background">Tint background</string>
+    <string name="text">Text</string>
+    <string name="layout">Layout</string>
+    <string name="align">Align</string>
+    <string name="show_above_text">Show above text</string>
+    <string name="show_outside">Show outside</string>
+    <string name="floating_color">Floating color</string>
+    <string name="width">Width</string>
+    <string name="reserve_space">Reserve space</string>
+    <string name="position">Position</string>
+    <string name="max_lines">Max lines</string>
+    <string name="marquee">Marquee</string>
+    <string name="spacer">Spacer</string>
+    <string name="rest_at_bottom">Rest at bottom</string>
+    <string name="results">Results</string>
+    <string name="enter_is_go">Open first result on enter</string>
+    <string name="x_on_duckduckgo">\"%1$s\" on DuckDuckGo</string>
+    <string name="widgets">Widgets</string>
+    <string name="_default">Default</string>
+    <string name="window">Window</string>
+    <string name="text_size">Text size</string>
+    <string name="hide">Hide</string>
+    <string name="drop_folder_to_mk_card">Drop folder here to use it as a card</string>
+    <string name="folder">Folder</string>
+    <string name="open_in_app">Open in app</string>
+    <string name="clear_custom_icons">Clear all custom icons</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="hide_persistent_notifications">Hide persistent notifications</string>
+    <string name="unhide">Unhide</string>
+
+    <plurals name="num_notifications">
+        <item quantity="one">%1$d meldingen</item>
+        <item quantity="other">%1$d meldingen</item>
+    </plurals>
+
+    <array name="sortingAlgorithms">
+        <item>Alfabetisch</item>
+        <item>Op kleur</item>
+    </array>
+
+    <array name="animationNames">
+        <item>posidon</item>
+        <item>onthullen</item>
+        <item>omhoogduwen</item>
+    </array>
+
+    <array name="bgModes">
+        <item>Egaal</item>
+        <item>Gloeiende onderzijde</item>
+        <item>Floating</item>
+    </array>
+
+    <array name="notificationGrouping">
+        <item>Systeeminstelling gebruiken</item>
+        <item>Groeperen op app</item>
+        <item>Niet groeperen</item>
+    </array>
+
+    <array name="iconBackgrounds">
+        <item>Dominante kleur</item>
+        <item>Lichte felle kleur</item>
+        <item>Donkere felle kleur</item>
+        <item>Lichte gedimde kleur</item>
+        <item>Donkere gedimde kleur</item>
+        <item>Aangepast</item>
+    </array>
+
+    <array name="namePositions">
+        <item>Bovenkant</item>
+        <item>Linkerkant</item>
+        <item>Verbergen</item>
+    </array>
+
+    <array name="articleReadingMethods">
+        <item>In browser</item>
+        <item>In web view</item>
+        <!--item>In article view (experimental)</item-->
+    </array>
+
+    <array name="actions">
+        <item>Nothing</item>
+        <item>Pull down notifications</item>
+        <item>Open app drawer</item>
+        <item>Open search</item>
+        <item>Open overview</item>
+        <item>Refresh feed</item>
+        <item>Open app</item>
+    </array>
+
+    <array name="notifBadgesBGs">
+        <item>Dominant color</item>
+        <item>Accent</item>
+        <item>Custom</item>
+    </array>
+
+    <array name="horizontalAlignment">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>
+    </array>
+</resources>

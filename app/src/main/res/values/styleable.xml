@@ -1,0 +1,27 @@
+<resources>
+    <declare-styleable name="SettingView">
+        <attr name="label" format="string"/>
+        <attr name="key" format="string"/>
+        <attr name="def" format="string|integer|color|float|enum">
+            <enum name="nothing" value="0"/>
+            <enum name="pull_down_notifications" value="1"/>
+            <enum name="open_app_drawer" value="2"/>
+            <enum name="open_search" value="3"/>
+            <enum name="open_overview" value="4"/>
+            <enum name="refresh_feed" value="5"/>
+            <enum name="open_app" value="6"/>
+        </attr>
+        <attr name="drawable" format="color|reference"/>
+    </declare-styleable>
+    <declare-styleable name="ColorSettingView" parent="SettingView">
+        <attr name="hasAlpha" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="NumberBarSettingView" parent="SettingView">
+        <attr name="max" format="integer"/>
+        <attr name="startsWith1" format="boolean"/>
+        <attr name="isFloat" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SpinnerSettingView" parent="SettingView">
+        <attr name="array" format="integer"/>
+    </declare-styleable>
+</resources>

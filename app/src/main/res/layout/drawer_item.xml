@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <FrameLayout
+        android:id="@+id/iconFrame"
+        android:layout_width="72dp"
+        android:layout_height="72dp">
+        <ImageView
+            android:id="@+id/iconimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/notificationBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="24sp"
+            android:layout_gravity="top|end"
+            android:minWidth="24sp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:includeFontPadding="false"
+            android:padding="4sp"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/icontxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:marqueeRepeatLimit="marquee_forever"/>
+</LinearLayout>

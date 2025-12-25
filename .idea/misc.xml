@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../../layout/custom_preview.xml" value="0.23597455176402546" />
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.47919375812743825" />
+        <entry key="../../../../../layout/custom_preview.xml" value="0.4083333333333333" />
+        <entry key="app/src/main/res/drawable/custom_catbg.xml" value="0.16111111111111112" />
+        <entry key="app/src/main/res/drawable/custom_dock.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/custom_feed.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/customizations.xml" value="0.16111111111111112" />
+        <entry key="app/src/main/res/drawable/dax.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/ic_arrow_right.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/ic_color.xml" value="0.21319444444444444" />
+        <entry key="app/src/main/res/drawable/ic_color_dropper.xml" value="0.21319444444444444" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.13402777777777777" />
+        <entry key="app/src/main/res/drawable/ic_play.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/ic_search.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_shapes.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_sorting.xml" value="0.13402777777777777" />
+        <entry key="app/src/main/res/drawable/ic_track_previous.xml" value="0.14027777777777778" />
+        <entry key="app/src/main/res/drawable/input_bg.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/progress.xml" value="0.12222222222222222" />
+        <entry key="app/src/main/res/drawable/progress_horizontal.xml" value="0.12222222222222222" />
+        <entry key="app/src/main/res/drawable/settings_card.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/settings_card_header.xml" value="0.24930555555555556" />
+        <entry key="app/src/main/res/drawable/settings_card_separator.xml" value="0.22777777777777777" />
+        <entry key="app/src/main/res/drawable/settings_suggestion_card.xml" value="0.22777777777777777" />
+        <entry key="app/src/main/res/layout-land/color_picker.xml" value="0.22991967871485944" />
+        <entry key="app/src/main/res/layout-sw600dp/color_picker.xml" value="0.268359375" />
+        <entry key="app/src/main/res/layout/app_edit_menu.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/color_picker.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/confirmation_dialog.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/custom_dock.xml" value="0.1486111111111111" />
+        <entry key="app/src/main/res/layout/custom_drawer.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/custom_hidden_apps.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/custom_home.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/custom_icon_pack_picker.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/custom_news.xml" value="0.23736338797814208" />
+        <entry key="app/src/main/res/layout/custom_notifications.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/custom_other.xml" value="0.2189207650273224" />
+        <entry key="app/src/main/res/layout/custom_search.xml" value="0.20969945355191258" />
+        <entry key="app/src/main/res/layout/custom_theme.xml" value="0.19023224043715847" />
+        <entry key="app/src/main/res/layout/customizations.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/notification_big_pic.xml" value="0.22465277777777778" />
+        <entry key="app/src/main/res/layout/notification_normal.xml" value="0.22465277777777778" />
+        <entry key="app/src/main/res/layout/notification_normal_summary.xml" value="0.22465277777777778" />
+        <entry key="app/src/main/res/layout/notification_progress.xml" value="0.15868055555555555" />
+        <entry key="app/src/main/res/layout/stack_trace_activity.xml" value="0.23854166666666668" />
+        <entry key="app/src/main/res/layout/wall_item.xml" value="0.23854166666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
+  </component>
+</project>

@@ -1,0 +1,17 @@
+This is not your typical pixel launcher. posidon launcher was built from scratch, to be a different experience.
+
+Minimal: There are constant improvements and optimizations in the ux, to make all of the settings as easy to understand as possible.
+
+Feature-rich:
+- Dock supports up to 7 columns and 3 rows of icons
+- News & Notifications feed
+- Vector and animated iconpack support
+- App search
+- Wallpaper gallery (all wallpapers are exclusive)
+- 6 Font options
+- Blur behind app drawer
+- A lot more
+
+Different: This launcher doesn't have pages, it has a scrollable feed. It's UI was inspired by One UI & elementary OS.
+
+posidon launcher is a nonprofit project, so I wont always be able to fix everything by myself, if you want to help posidon launcher become better, please report any bugs at t.me/posidonlauncher.
